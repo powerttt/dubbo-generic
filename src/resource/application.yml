@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: GW
+
+dubbo:
+  application:
+    name: GW
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocol:
+    port: -1
+    name: dubbo
+
+
+powertn:
+  dubbo:
+    routers:
+      generic:
+        serverName: com.github.powerttt.generic.provider.TestService
+        methods:
+          echo:
+            - filed: say
+              type: String
+          test:
+            - filed: say
+              type: String
+          test1:
+            - filed: null
+              type: null
+          restful:
+            - filed: id
+              rest-path: user/{id}
+              type: String
+

@@ -1,7 +1,18 @@
 spring:
   application:
     name: GW
-
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: ADMIN
+jwt:
+  config:
+    key: powertn
+    # 60 * 60 * 24 * 7
+    expiration: 604800
+    # 60 * 60 * 24
+    refresh: 86400
 dubbo:
   application:
     name: GW
@@ -37,4 +48,5 @@ powertn:
             - filed: id
               rest-path: user/{id}
               type: String
-
+server:
+  port: 8900

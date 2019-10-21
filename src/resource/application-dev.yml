@@ -38,6 +38,8 @@ powertn:
           echo:
             - filed: say
               type: String
+            - filed: say
+              type: String
           test:
             - filed: say
               type: String

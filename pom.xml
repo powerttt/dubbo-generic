@@ -9,9 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.changyuan</groupId>
-        <artifactId>boot-tn</artifactId>
-        <version>${revision}</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <packaging>jar</packaging>
@@ -23,11 +24,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.changyuan</groupId>
-            <artifactId>boot-commons</artifactId>
-            <version>${revision}</version>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
         <dependency>

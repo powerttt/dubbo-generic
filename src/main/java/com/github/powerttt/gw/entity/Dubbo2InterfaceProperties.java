@@ -36,4 +36,8 @@ public class Dubbo2InterfaceProperties {
     public void setMethods(Map<String, List<Dubbo2ParamProperties>> methods) {
         this.methods = methods;
     }
+
+    public List<Dubbo2ParamProperties> generateMethod(String method) {
+        return method == null ? null : methods.get(method);
+    }
 }

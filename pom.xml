@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.changyuan</groupId>
+        <groupId>com.github</groupId>
         <artifactId>boot-tn</artifactId>
         <version>${revision}</version>
     </parent>
@@ -24,7 +24,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.changyuan</groupId>
+            <groupId>com.github</groupId>
             <artifactId>boot-commons</artifactId>
             <version>${revision}</version>
         </dependency>
